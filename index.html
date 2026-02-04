@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scarlett Isles Session Forge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>Session Forge</h1>
+    <p>Paste a quest outline. Get a 90-minute DM session sheet.</p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Quest Outline</h2>
+      <textarea id="outline" placeholder="Paste your Notice Board quest outline here..."></textarea>
+
+      <div class="row">
+        <label>
+          Target Length
+          <select id="length">
+            <option value="90">90 minutes</option>
+            <option value="120">120 minutes</option>
+          </select>
+        </label>
+
+        <label>
+          Party Level
+          <input id="level" type="number" min="1" max="20" value="7"/>
+        </label>
+
+        <button id="generate">Forge Session Sheet</button>
+      </div>
+
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="card">
+      <h2>DM Session Sheet (Markdown)</h2>
+      <pre id="output"></pre>
+      <div class="row">
+        <button id="copy">Copy Markdown</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
