@@ -1,4 +1,4 @@
-const WORKER_URL = "https://YOUR_WORKER_URL/generate";
+const WORKER_URL = "https://session-forge.hjhudson-writer.workers.dev/generate";
 
 const elOutline = document.getElementById("outline");
 const elOutput  = document.getElementById("output");
