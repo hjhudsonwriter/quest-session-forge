@@ -14,6 +14,7 @@ document.getElementById("generate").addEventListener("click", async () => {
     return;
   }
 
+  
   elStatus.textContent = "Forging…";
   elOutput.textContent = "";
 
